@@ -13,5 +13,5 @@ hash_dict = pd.DataFrame.from_dict({str(filepath): get_checksum(filepath) for fi
                                    orient="index", columns=['hash_value'])
 hash_dict.index.name = 'filepath'
 save_path = DATA_DIR if DATA_DIR.is_dir() else DATA_DIR.parent
-save_path = save_path / hash_dict.xlsx
+save_path = save_path / "hash_dict.xlsx"
 hash_dict.to_excel(save_path)
