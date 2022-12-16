@@ -9,5 +9,5 @@ setup(
     author='Agustin Corbat',
     author_email='agustin.corbat@ki.se',
     description='Generate an excelsheet with the MD5 checksum of all files inside the provided path.',
-    install_requires=['pandas', 'tqdm', 'simple_file_checksum']
+    install_requires=['pandas', 'tqdm', 'simple_file_checksum', 'openpyxl']
 )
